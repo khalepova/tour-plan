@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Mulish', sans-serif;
   color: #333333;
 }
 
@@ -370,11 +370,10 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
-.header__search {
+.header-top__search {
   margin-right: auto;
   margin-left: 108px;
 }
@@ -392,13 +391,13 @@ template {
 .search__input {
   height: 100%;
   width: 250px;
-  padding-left: 23px;
-  padding-right: 75px;
+  padding: 0 75px 0 23px;
   background-color: #F5FAFE;
   border: none;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
+  outline: none;
 }
 
 .search__button {
@@ -409,6 +408,8 @@ template {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  outline: none;
+  cursor: pointer;
 }
 
 .user {

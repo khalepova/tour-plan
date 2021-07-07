@@ -1,0 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: muli;
+}
+
+body {
+  background-color: #555141;
+  font-family: serif;
+}

@@ -8,3 +8,14 @@ var swiper = new Swiper(".swiper-container", {
     prevEl: ".slider-button--prev",
   },
 });
+
+document.addEventListener("keyup", function (event) {
+  // ArrowLeft
+  // ArrowRight
+  if (event.key === "ArrowLeft") {
+    swiper.slidePrev();
+  }
+  if (event.key === "ArrowRight") {
+    swiper.slideNext();
+  }
+});

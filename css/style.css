@@ -812,7 +812,7 @@ template {
   .slider {
     width: 590px;
   }
-  .swiper-slide__img {
+  .swiper-slide__image {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;

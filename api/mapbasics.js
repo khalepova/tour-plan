@@ -19,8 +19,7 @@ function init() {
     }
   );
 
-  document.getElementById("destroyButton").onclick = function () {
-    // Для уничтожения используется метод destroy.
-    myMap.destroy();
-  };
+  var myPlacemark = new ymaps.Placemark([7.838114, 98.299123]);
+  myMap.geoObjects.add(myPlacemark);
+
 }

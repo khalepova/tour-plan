@@ -1,11 +1,11 @@
-var swiper = new Swiper(".swiper-container", {
+var hotelSlider = new Swiper(".hotel-slider", {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: ".slider-button--next",
-    prevEl: ".slider-button--prev",
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
 });
 
@@ -13,9 +13,28 @@ document.addEventListener("keyup", function (event) {
   // ArrowLeft
   // ArrowRight
   if (event.key === "ArrowLeft") {
-    swiper.slidePrev();
+    hotelSlider.slidePrev();
   }
   if (event.key === "ArrowRight") {
-    swiper.slideNext();
+    hotelSlider.slideNext();
+  }
+  if (event.key === "a") {
+    reviewsSlider.slidePrev();
+  }
+  if (event.key === "d") {
+    reviewsSlider.slideNext();
   }
 });
+
+var reviewsSlider = new Swiper(".reviews-slider", {
+  // Optional parameters
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
+  },
+});
+
+$(".newsletter").parallax({ imageSrc: "../img/newsletter-bg.jpg" });
